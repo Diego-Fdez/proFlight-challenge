@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.prev-btn {
+  width: 37px;
+  height: 35px;
+  background-image: url('../src/assets/back-arrow.svg');
+  background-size: cover;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.next-btn {
+  width: 37px;
+  height: 35px;
+  background-image: url('../src/assets/next-arrow.svg');
+  background-size: cover;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logo {
+  width: 108px;
+  height: 103px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  .prev-btn {
+    width: 113px;
+    height: 107.53px;
+  }
+
+  .next-btn {
+    width: 113px;
+    height: 107.53px;
+  }
+
+  .logo {
+    width: 216.49px;
+    height: 206px;
+  }
+}
